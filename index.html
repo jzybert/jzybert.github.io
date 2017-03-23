@@ -1,12 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
     <title>Jonathan Zybert</title>
     <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <style>
+        .container-fluid {
+            margin-top: 50px;
+            font-family: Calibri, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif;
+        }
+
+        .button button {
+            border: none;
+            background-color: transparent;
+        }
+
+        .button button:hover {
+            background-color: transparent;
+        }
+
+        .button-layers {
+            position: relative;
+            top: 20px;
+        }
+
+        .button-layers .button {
+            position: absolute;
+        }
+
+        .button-layers .button-colored-bar {
+            position: absolute;
+        }
+
+        .button-colored-bar {
+            width: 85px;
+            height: 10px;
+            background-color: rgba(114, 177, 109, 0.6);
+            top: 15px;
+            -webkit-transition: background-color 0.5s, top 0.5s, height 0.5s;
+            transition: background-color 0.5s, top 0.5s, height 0.5s;
+        }
+
+        .button-layers:hover > .button-colored-bar {
+            background-color: rgba(114, 177, 109, 1.0);
+            top: 20px;
+            height: 15px;
+        }
+
+        h4 {
+            margin-top: -5px;
+        }
+    </style>
 </head>
 <body>
-<h1>Hello new world!</h1>
-<h2>Cool stuff bro!</h2>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-1"></div>
+        <div class="col-sm-8"><h1><b>Jonathan Zybert</b></h1></div>
+        <div class="col-sm-1">
+            <div class="button-layers">
+                <div class="button-colored-bar"></div>
+                <div class="button">
+                    <button type="button" class="btn btn-default">About me</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-1"></div>
+        <div class="col-sm-11"><h4>Software engineer.</h4></div>
+    </div>
+    <div class="row">
+        <div class="col-sm-4" style="background-color:lavender;">.col-sm-4</div>
+        <div class="col-sm-4" style="background-color:lavenderblush;">.col-sm-4</div>
+        <div class="col-sm-4" style="background-color:lavender;">.col-sm-4</div>
+    </div>
+</div>
+
 </body>
 </html>
