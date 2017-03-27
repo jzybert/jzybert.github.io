@@ -20,6 +20,7 @@
     height: 10px;
     top: -9px;
     left: -2px;
+    z-index: -1;
     background-color: rgba(114, 177, 109, 0.6);
     -webkit-transition: background-color 0.5s, top 0.5s, height 0.5s;
     transition: background-color 0.5s, top 0.5s, height 0.5s;
