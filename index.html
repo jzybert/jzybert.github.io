@@ -8,76 +8,28 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
-    <style>
-        .container-fluid {
-            margin-top: 50px;
-            font-family: Calibri, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif;
-        }
-
-        .button-layers {
-            position: relative;
-        }
-
-        .button-layers a {
-            position: absolute;
-        }
-
-        .button-layers .button-colored-bar {
-            position: absolute;
-        }
-
-        .button-colored-bar {
-            width: 123px;
-            height: 10px;
-            top: 6px;
-            background-color: rgba(114, 177, 109, 0.6);
-            -webkit-transition: background-color 0.5s, top 0.5s, height 0.5s;
-            transition: background-color 0.5s, top 0.5s, height 0.5s;
-        }
-
-        .button-layers:hover .button-colored-bar {
-            background-color: rgba(114, 177, 109, 1.0);
-            top: 10px;
-            height: 15px;
-        }
-
-        h4 {
-            margin-top: -5px;
-            float: left;
-            color: black;
-        }
-
-        a {
-            color: black;
-        }
-
-        .more-about-me-button {
-            margin-left: 401px;
-        }
-    </style>
+    <link rel="stylesheet" href="src/css/style.css">
 </head>
 <body>
 <div class="container-fluid">
     <div class="row">
-        <div class="col-sm-1"></div>
-        <div class="col-sm-8"><h1><b>Jonathan Zybert</b></h1></div>
+        <div class="col-md-12"><h1><b>Jonathan Zybert</b></h1></div>
     </div>
     <div class="row">
-        <div class="col-sm-1"></div>
-        <div class="col-sm-11">
-            <h4>
-                I care about making smart streamline code and design.&nbsp;
-            </h4>
-            <div class="button-layers">
-                <div class="more-about-me-button">
-                    <div class="button-colored-bar"></div>
-                    <a href="about.html"><h4>More about me.</h4></a>
-                </div>
+        <div class="col-md-12">
+            <div class="intro">
+                <h4>
+                <span class="intro-text">I care about making smart streamline code and design.&nbsp;
+                    <span class="button-layers">
+                        <a href="about.html">More about me.</a>
+                        <div class="button-colored-bar"></div>
+                    </span>
+                </span>
+
+                </h4>
             </div>
         </div>
     </div>
 </div>
-
 </body>
 </html>

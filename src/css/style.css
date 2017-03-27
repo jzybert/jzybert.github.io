@@ -1,0 +1,46 @@
+.container-fluid {
+    margin-top: 50px;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-family: Calibri, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif;
+}
+
+.intro-text {
+    max-width: 600px;
+    display: inline-block;
+}
+
+.button-layers {
+    display: inline-block;
+}
+
+.button-colored-bar {
+    position: relative;
+    width: 123px;
+    height: 10px;
+    top: -9px;
+    left: -2px;
+    background-color: rgba(114, 177, 109, 0.6);
+    -webkit-transition: background-color 0.5s, top 0.5s, height 0.5s;
+    transition: background-color 0.5s, top 0.5s, height 0.5s;
+}
+
+.button-layers:hover .button-colored-bar {
+    background-color: rgba(114, 177, 109, 1.0);
+    top: -4px;
+    height: 15px;
+}
+
+h4 {
+    margin-top: -5px;
+    color: black;
+}
+
+a {
+    color: black;
+}
+
+a:hover {
+    text-decoration: none;
+    color: black;
+}
