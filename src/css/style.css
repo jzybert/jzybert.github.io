@@ -8,6 +8,7 @@
 .intro-text {
     max-width: 600px;
     display: inline-block;
+    height: 20px;
 }
 
 .button-layers {
@@ -44,4 +45,42 @@ a {
 a:hover {
     text-decoration: none;
     color: black;
+}
+
+.qbLogo {
+    width: 450px;
+}
+
+.large-box {
+    width: 500px;
+    height: 300px;
+    padding: 20px;
+    border: 2px solid #1c321b;
+    transition: all 0.5s ease;
+}
+
+.large-box:hover {
+    transform: rotate(2deg);
+}
+
+.large-box:hover .description-box {
+    transform: rotate(-2deg);
+    color: white;
+    background-color: rgba(114, 177, 109, 1.0);
+}
+
+.small-box {
+
+}
+
+.description-box {
+    position: fixed;
+    height: 60px;
+    width: 400px;
+    border: 2px solid #1c321b;
+    background-color: white;
+    margin-top: 200px;
+    margin-left: -30px;
+    padding: 7px 15px;
+    transition: all 0.5s ease;
 }
