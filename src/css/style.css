@@ -52,8 +52,13 @@ a:hover {
 }
 
 .large-box {
+    position: relative;
     max-width: 500px;
-    height: 300px;
+    max-height: 300px;
+    min-width: 265px;
+    min-height: 120px;
+    width: 60vw;
+    height: 40vw;
     padding: 20px;
     border: 2px solid #1c321b;
     transition: all 0.5s ease;
@@ -74,11 +79,12 @@ a:hover {
 }
 
 .description-box {
+    position: absolute;
+    bottom: 20px;
     height: 60px;
     max-width: 400px;
     border: 2px solid #1c321b;
     background-color: white;
-    margin-top: 200px;
     margin-left: -30px;
     padding: 7px 15px;
     transition: all 0.5s ease;
