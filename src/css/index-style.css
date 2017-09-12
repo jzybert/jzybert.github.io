@@ -1,0 +1,85 @@
+.container-fluid {
+    margin-top: 50px;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-family: Calibri, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif;
+}
+
+.intro-text {
+    max-width: 600px;
+    display: inline-block;
+    height: 20px;
+}
+
+.button-layers {
+    display: inline-block;
+}
+
+.button-colored-bar {
+    position: relative;
+    width: 123px;
+    height: 10px;
+    top: -9px;
+    left: -2px;
+    z-index: -1;
+    background-color: rgba(114, 177, 109, 0.6);
+    -webkit-transition: background-color 0.5s, top 0.5s, height 0.5s;
+    transition: background-color 0.5s, top 0.5s, height 0.5s;
+}
+
+.button-layers:hover .button-colored-bar {
+    background-color: rgba(114, 177, 109, 1.0);
+    top: -4px;
+    height: 15px;
+}
+
+h4 {
+    margin-top: -5px;
+    color: black;
+}
+
+a {
+    color: black;
+}
+
+a:hover {
+    text-decoration: none;
+    color: black;
+}
+
+.large-box {
+    position: relative;
+    min-width: 245px;
+    min-height: 120px;
+    max-width: 40vw;
+    max-height: 20vw;
+    padding: 20px;
+    transition: all 0.5s ease;
+}
+
+.large-box:hover .description-box {
+    transform: scale(1.03, 1.03);
+    color: white;
+    background-color: rgba(114, 177, 109, 1.0);
+}
+
+.small-box {
+
+}
+
+.description-box {
+    position: absolute;
+    bottom: 10px;
+    height: 80px;
+    max-width: 400px;
+    border: 2px solid #1c321b;
+    background-color: white;
+    margin-left: -30px;
+    padding: 7px 15px;
+    transition: all 0.5s ease;
+}
+
+.qbLogo {
+    position: relative;
+    border: 2px solid #1c321b;
+}
