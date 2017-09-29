@@ -1,0 +1,26 @@
+.container-fluid {
+    margin-left: 10%;
+    margin-right: 10%;
+    font-family: Calibri, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif;
+}
+
+a {
+    color: black;
+}
+
+a:hover {
+    text-decoration: none;
+    color: black;
+}
+
+.button-layers {
+    display: inline-block;
+}
+
+.button-colored-bar {
+    position: relative;
+    z-index: -1;
+    background-color: rgba(114, 177, 109, 0.6);
+    -webkit-transition: background-color 0.5s, top 0.5s, height 0.5s, margin-bottom 0.5s;
+    transition: background-color 0.5s, top 0.5s, height 0.5s, margin-bottom 0.5s;
+}
