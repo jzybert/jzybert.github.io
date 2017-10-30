@@ -44,7 +44,7 @@ h4 {
 .description-box {
     position: absolute;
     bottom: 10px;
-    height: 80px;
+    min-height: 80px;
     max-width: 400px;
     border: 2px solid #1c321b;
     background-color: white;
