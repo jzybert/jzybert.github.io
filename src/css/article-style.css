@@ -5,10 +5,18 @@
     padding: 20px;
     border: 2px solid #1c321b;
     height: 300px;
+    transition: all 0.5s ease;
+    overflow: hidden;
+}
+
+.article-clipping-container:hover {
+    transform: scale(1.01, 1.01);
+    border: 2px solid rgba(114, 177, 109, 1.0);
+    cursor: pointer;
 }
 
 .article-header {
-
+    margin-top: -25px;
 }
 
 .article-title {
