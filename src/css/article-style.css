@@ -9,9 +9,12 @@
     overflow: hidden;
 }
 
+.article-clipping-container .article-content {
+    height: 60%;
+}
+
 .article-clipping-container:hover {
     transform: scale(1.01, 1.01);
-    border: 2px solid rgba(114, 177, 109, 1.0);
     cursor: pointer;
 }
 
@@ -28,7 +31,8 @@
 }
 
 .article-date {
-
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 .article-content {
