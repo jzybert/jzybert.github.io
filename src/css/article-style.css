@@ -1,0 +1,28 @@
+.article-clipping-container {
+    position: relative;
+    min-width: 245px;
+    min-height: 120px;
+    padding: 20px;
+    border: 2px solid #1c321b;
+    height: 300px;
+}
+
+.article-header {
+
+}
+
+.article-title {
+
+}
+
+.article-written-by {
+
+}
+
+.article-date {
+
+}
+
+.article-content {
+
+}
