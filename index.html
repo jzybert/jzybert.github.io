@@ -3,7 +3,8 @@
     <head>
         <meta charset="UTF-8">
         <title>Jonathan Zybert</title>
-        <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
+        <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900italic,900' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
         <link rel="stylesheet" href="index.css">
         <script>
             function getYear() {
@@ -13,69 +14,48 @@
         </script>
     </head>
     <body>
-        <div id="content">
-            <div id="header" class="highlight-section">
-                <h1>Jonathan Zybert, software engineer</h1>
-                <h2>I am a front-end engineer, D&D enthusiast, artist, and chess player</h2>
-            </div>
-            <div id="work-content">
-                <div class="work-section" onclick="window.location.href = 'https://jonathanzybert.com/about/amazonProblemPrioritization';">
-                    <p>Problem prioritization view for Amazon warehouses</p>
-                    <p class="company">Amazon Robotics</p>
-                    <span>React + GraphQL</span>
+        <div id="site-header">
+            <span class="material-symbols-outlined home-icon" onclick="window.location.assign('www.jonathanzybert.com')">
+                Home
+            </span>
+        </div>
+        <div id="page-content">
+            <div id="wrapper">
+                <div id="intro">
+                    <h1>Hi, Jonathan Zybert!</h1>
+                    <h3>I am a software engineer, D&D player, athlete, artist, hiker, baker, reader, and much more</h3>
+                    <a href="https://www.jonathanzybert.com/about/">About</a> • <a href="https://www.jonathanzybert.com/about/contact/">Contact</a>
                 </div>
-                <div class="work-section" onclick="window.location.href = 'https://jonathanzybert.com/about/amazonDiagnosticTool';">
-                    <p>Plug-in diagnostic tool for hardware maintenance</p>
-                    <p class="company">Amazon Robotics</p>
-                    <span>React + Electron + Node</span>
+                <div id="experience">
+                    <h2>Professional Journey</h2>
+                    <h3>Amazon</h3>
+                    <p>April 2024 - Present • <b>Software Development Engineer II, Amazon Robotics</b></p>
+                    <p>August 2023 - March 2024 • <b>Front-End Engineer II, Prime Video</b></p>
+                    <p>November 2022 - July 2023 • <b>Front-End Engineer II, Amazon Robotics</b></p>
+                    <p>May 2020 - October 2022 • <b>Software Development Engineer, Amazon Robotics</b></p>
+                    <h3>🎓 May 2020 • Graduated from Northeastern University with a B.S. in Computer Science</h3>
+                    <h3>Khoury College of Computer Sciences</h3>
+                    <p>January 2020 - April 2020 • <b>Teaching Assistant</b></p>
+                    <h3>Amazon Robotics</h3>
+                    <p>July 2019 - August 2019 • <b>Software Engineering Contractor</b></p>
+                    <p>January 2019 - June 2019 • <b>Software Engineering Co-op</b></p>
+                    <h3>Accion Systems</h3>
+                    <p>July 2018 - October 2018 • <b>Software Engineering Contractor</b></p>
+                    <p>January 2018 - June 2018 • <b>Software Engineering Co-op</b></p>
+                    <h3>Quick Base</h3>
+                    <p>January 2017 - June 2017 • <b>Software Engineering Co-op</b></p>
+                    <h3>🎓 September 2015 • Started School at Northeastern University</h3>
                 </div>
-                <div class="work-section" onclick="window.location.href = 'https://jonathanzybert.com/about/amazonTicketResolution';">
-                    <p>Ticket resolution assistant</p>
-                    <p class="company">Amazon Robotics</p>
-                    <span>React + Java + Prototyping</span>
-                </div>
-                <div class="work-section" onclick="window.location.href = 'https://jonathanzybert.com/about/accionControlCenter';">
-                    <p>Satellite propulsion control center</p>
-                    <p class="company">Accion Systems</p>
-                    <span>HTML + Python</span>
-                </div>
             </div>
-            <div id="experience" class="highlight-section">
-                <h2>Experience</h2>
-                <h3>Amazon Prime Video</h3>
-                <p>August 2024 - Present | Front-End Engineer II</p>
-                <h3>Amazon Robotics</h3>
-                <p>November 2022 - July 2024 | Front-End Engineer II</p>
-                <p>May 2020 - October 2022 | Software Development Engineer</p>
-                <h3>Khoury College of Computer Sciences</h3>
-                <p>January 2020 - April 2020 | Teaching Assistant</p>
-                <h3>Amazon Robotics</h3>
-                <p>Jululy 2019 - August 2019 | Software Engineering Contractor</p>
-                <p>January 2019 - June 2019 | Software Engineering Co-op</p>
-                <h3>Accion Systems</h3>
-                <p>July 2018 - October 2018 | Software Engineering Contractor</p>
-                <p>January 2018 - June 2018 | Software Engineering Co-op</p>
-                <h3>Quick Base</h3>
-                <p>January 2017 - June 2017 | Software Engineering Co-op</p>
+        </div>
+        <div id="footer">
+            <div id="links">
+                <a href="https://www.linkedin.com/in/jonathanzybert/" target="_blank">LinkedIn</a>
+                <a href="https://github.com/jzybert" target="_blank">GitHub</a>
+                <a href="mailto:jmzybert@gmail.com" target="_blank">Email</a>
+                <a href="https://jonathanzybert.com/resume/jonathan-zybert-resume.pdf" target="_blank">Resume</a>
             </div>
-            <div id="image-of-me">
-            </div>
-            <div id="about" class="highlight-section">
-                <p>
-                    I'm passionate at creating robust, real-time front-end experiences. I've spent the last several years
-                    solving complex challenges for Amazon Robotics - from real-time problem management views used by hundreds
-                    of Operations associates to specialized tooling for robotic hardware maintenance and verification.
-                </p>
-            </div>
-            <div id="footer">
-                <div id="links">
-                    <a href="https://www.linkedin.com/in/jonathanzybert/" target="_blank">LinkedIn</a>
-                    <a href="https://github.com/jzybert" target="_blank">GitHub</a>
-                    <a href="mailto:jmzybert@gmail.com" target="_blank">Email</a>
-                    <a href="https://jonathanzybert.com/resume/jonathan-zybert-resume.pdf" target="_blank">Resume</a>
-                </div>
-                <p>© <script>document.write(getYear())</script> Jonathan Zybert</p>
-            </div>
+            <p>© <script>document.write(getYear())</script> Jonathan Zybert</p>
         </div>
     </body>
 </html>
