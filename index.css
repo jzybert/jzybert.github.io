@@ -1,7 +1,7 @@
 :root {
     --color-primary: #4c662b;
     --color-primary-text: white;
-    --color-secondary: #cdeda3;
+    --color-secondary: orange;
     --color-secondary-text: black;
 }
 
@@ -13,11 +13,14 @@ html, body, #root, #root>div, #content {
     margin: 0;
 }
 
-#site-header {
-    height: 55px;
+.accent-color {
+    color: var(--color-primary)
+}
+
+.site-header {
+    height: 60px;
     position: relative;
-    width: 96vw;
-    padding: 0 2vw;
+    padding: 0 10vw;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -26,26 +29,69 @@ html, body, #root, #root>div, #content {
     color: var(--color-primary-text);
 }
 
-#intro > a {
-    color: var(--color-primary);
-}
-
 .home-icon {
     cursor: pointer;
 }
 
+.contact-links > a:not(:last-child) {
+    margin-right: 16px;
+}
+
+.contact-links > a {
+    color: var(--color-primary-text);
+    text-decoration: none;
+}
+
+#my-name {
+    margin-bottom: 0;
+}
+
+#description {
+    margin-top: 0;
+}
+
+.typing-style-wrapper {
+    display: inline-block;
+}
+
+.typing-style {
+    overflow: hidden;
+    border-right: .15em solid var(--color-secondary);
+    white-space: nowrap;
+    font-size: 1.6rem;
+    width: 0;
+}
+
+.typing-forward-animation {
+    animation: typing 1s steps(20, end) forwards;
+}
+
+.typing-backwards-animation {
+    animation: typing-backwards 1s steps(20, end) forwards;
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+@keyframes typing-backwards {
+    from { width: 100% }
+    to { width: 0 }
+}
+
 #page-content {
-    padding: 30px 0;
+    padding: 60px 0;
 }
 
 #wrapper {
     margin-left: auto;
     margin-right: auto;
-    max-width: 80vw;
+    max-width: 60vw;
 }
 
 #footer {
-    padding: 0 15vw;
+    padding: 0 10vw;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
