@@ -41,10 +41,15 @@
             // Initial call on page load
             changeDescription();
         </script>
+        <script>
+            function navigateTo(url) {
+                window.location.assign("https://www.jonathanzybert.com" + url);
+            }
+        </script>
     </head>
     <body>
         <div class="site-header">
-            <div style="display: flex; flex-direction: row; align-items: center; cursor: pointer;" onclick="window.location.assign('https://www.jonathanzybert.com/')">
+            <div style="display: flex; flex-direction: row; align-items: center; cursor: pointer;" onclick="navigateTo('/')">
                 <span class="material-symbols-outlined home-icon" style="margin-right: 16px;">
                     Home
                 </span>
@@ -66,6 +71,41 @@
                 <div class="details">
                     <b>Prime Video | Amazon Robotics | Accion Systems | Quick Base</b>
                     <p>I'm a multidisciplinary engineer with 4+ years of experience in full-stack programming and design in the robotics industry.</p>
+                </div>
+                <div class="projects">
+                    <div class="project-wrapper" onclick="navigateTo('/about/qbcc')">
+                        <img src="images/amazon-warehouse.jpeg" />
+                        <div class="project-box">
+                            <div class="project-name">
+                                Quarterback Command Center
+                            </div>
+                            <div class="project-description">
+                                Prioritized view of problems at the Amazon warehouse.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-wrapper" onclick="navigateTo('/about/tricorder')">
+                        <img src="images/amazon-drive.jpg" />
+                        <div class="project-box">
+                            <div class="project-name">
+                                Tricorder
+                            </div>
+                            <div class="project-description">
+                                Robotic drive unit troubleshooting and diganostics.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-wrapper" onclick="navigateTo('/about/accion')">
+                        <img src="images/accion-systems.jpg" />
+                        <div class="project-box">
+                            <div class="project-name">
+                                Satellite Propulsion Tooling
+                            </div>
+                            <div class="project-description">
+                                Tooling for verification of CubeSat propulsion hardware.
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div id="experience">
                     <h2>Professional Journey</h2>
