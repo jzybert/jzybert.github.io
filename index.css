@@ -80,6 +80,10 @@ html, body, #root, #root>div, #content {
     to { width: 0 }
 }
 
+.details {
+    margin-top: 24px;
+}
+
 #page-content {
     padding: 60px 0;
 }
@@ -109,4 +113,5 @@ html, body, #root, #root>div, #content {
 #footer > #links > a {
     margin-right: 8px;
     color: var(--color-primary-text);
+    text-decoration: none;
 }

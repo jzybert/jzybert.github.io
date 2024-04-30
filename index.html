@@ -44,9 +44,12 @@
     </head>
     <body>
         <div class="site-header">
-            <span class="material-symbols-outlined home-icon" onclick="window.location.assign('https://www.jonathanzybert.com/')">
-                Home
-            </span>
+            <div style="display: flex; flex-direction: row; align-items: center; cursor: pointer;" onclick="window.location.assign('https://www.jonathanzybert.com/')">
+                <span class="material-symbols-outlined home-icon" style="margin-right: 16px;">
+                    Home
+                </span>
+                Jonathan Zybert
+            </div>
             <div class="contact-links">
                 <a href="https://www.jonathanzybert.com/about/">About</a>
                 <a href="https://www.jonathanzybert.com/about/contact/">Contact</a>
@@ -54,11 +57,15 @@
         </div>
         <div id="page-content">
             <div id="wrapper">
-                <div id="intro">
+                <div>
                     <h1 id="my-name">Hi, I'm <span class="accent-color">Jonathan Zybert</span></h1>
                     <div class="typing-style-wrapper">
                         <h2 class="typing-style" id="description">Software engineer</h2>
                     </div>
+                </div>
+                <div class="details">
+                    <b>Prime Video | Amazon Robotics | Accion Systems | Quick Base</b>
+                    <p>I'm a multidisciplinary engineer with 4+ years of experience in full-stack programming and design in the robotics industry.</p>
                 </div>
                 <div id="experience">
                     <h2>Professional Journey</h2>
