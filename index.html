@@ -5,6 +5,7 @@
         <title>Jonathan Zybert</title>
         <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900italic,900' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+        <link rel="stylesheet" href="shared.css">
         <link rel="stylesheet" href="index.css">
         <script>
             function getYear() {
@@ -23,7 +24,7 @@
                     document.getElementById("description").classList.add("typing-backwards-animation");
                 } else {
                     document.getElementById("description").classList.remove("typing-backwards-animation");
-                    let descriptions = ["Software engineer", "UI/UX designer", "D&D player and game master", "Oil painter and scratch artist", "Outdoor photographer", "Book reader"];
+                    let descriptions = ["Software engineer", "UI/UX designer", "D&D player and game master", "Oil painter and scratch artist", "Épée fencer", "Outdoor photographer", "Book reader"];
                     document.getElementById("description").innerHTML = descriptions[index];
                     if (index + 1 === descriptions.length) {
                         index = 0;
@@ -56,24 +57,34 @@
                 Jonathan Zybert
             </div>
             <div class="contact-links">
-                <a href="https://www.jonathanzybert.com/about/">About</a>
-                <a href="https://www.jonathanzybert.com/about/contact/">Contact</a>
+                <a href="https://www.jonathanzybert.com/about.html">About</a>
             </div>
         </div>
-        <div id="page-content">
-            <div id="wrapper">
+        <div class="page-content">
+            <div class="wrapper">
                 <div>
-                    <h1 id="my-name">Hi, I'm <span class="accent-color">Jonathan Zybert</span></h1>
+                    <h1 class="my-name">Hi, I'm <span class="accent-color">Jonathan Zybert</span></h1>
                     <div class="typing-style-wrapper">
                         <h2 class="typing-style" id="description">Software engineer</h2>
                     </div>
                 </div>
                 <div class="details">
-                    <b>Prime Video | Amazon Robotics | Accion Systems | Quick Base</b>
-                    <p>I'm a multidisciplinary engineer with 4+ years of experience in full-stack programming and design in the robotics industry.</p>
+                    <b>Prime Video | Amazon Robotics | Accion Systems</b>
+                    <p>I'm a multidisciplinary engineer with 4+ years of experience in full-stack programming and design in the tech and robotics industry.</p>
                 </div>
                 <div class="projects">
-                    <div class="project-wrapper" onclick="navigateTo('/about/qbcc')">
+                    <div class="project-wrapper" onclick="navigateTo('/amazon-slate.html')">
+                        <img src="images/amazon-prime-video.jpg" />
+                        <div class="project-box">
+                            <div class="project-name">
+                                Prime Video Slate
+                            </div>
+                            <div class="project-description">
+                                Content management system for Prime Video studios.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-wrapper" onclick="navigateTo('/amazon-qbcc.html')">
                         <img src="images/amazon-warehouse.jpeg" />
                         <div class="project-box">
                             <div class="project-name">
@@ -84,53 +95,33 @@
                             </div>
                         </div>
                     </div>
-                    <div class="project-wrapper" onclick="navigateTo('/about/tricorder')">
+                    <div class="project-wrapper" onclick="navigateTo('/amazon-tricorder.html')">
                         <img src="images/amazon-drive.jpg" />
                         <div class="project-box">
                             <div class="project-name">
                                 Tricorder
                             </div>
                             <div class="project-description">
-                                Robotic drive unit troubleshooting and diganostics.
+                                HMI for robotic drive unit troubleshooting and diganostics.
                             </div>
                         </div>
                     </div>
-                    <div class="project-wrapper" onclick="navigateTo('/about/accion')">
+                    <div class="project-wrapper" onclick="navigateTo('/accion-systems.html')">
                         <img src="images/accion-systems.jpg" />
                         <div class="project-box">
                             <div class="project-name">
-                                Satellite Propulsion Tooling
+                                Satellite Propulsion HMI
                             </div>
                             <div class="project-description">
-                                Tooling for verification of CubeSat propulsion hardware.
+                                Testing tools for CubeSat propulsion hardware.
                             </div>
                         </div>
                     </div>
                 </div>
-                <div id="experience">
-                    <h2>Professional Journey</h2>
-                    <h3>Amazon</h3>
-                    <p>April 2024 - Present • <b>Software Development Engineer II, Amazon Robotics</b></p>
-                    <p>August 2023 - March 2024 • <b>Front-End Engineer II, Prime Video</b></p>
-                    <p>November 2022 - July 2023 • <b>Front-End Engineer II, Amazon Robotics</b></p>
-                    <p>May 2020 - October 2022 • <b>Software Development Engineer, Amazon Robotics</b></p>
-                    <h3>🎓 May 2020 • Graduated from Northeastern University with a B.S. in Computer Science</h3>
-                    <h3>Khoury College of Computer Sciences</h3>
-                    <p>January 2020 - April 2020 • <b>Teaching Assistant</b></p>
-                    <h3>Amazon Robotics</h3>
-                    <p>July 2019 - August 2019 • <b>Software Engineering Contractor</b></p>
-                    <p>January 2019 - June 2019 • <b>Software Engineering Co-op</b></p>
-                    <h3>Accion Systems</h3>
-                    <p>July 2018 - October 2018 • <b>Software Engineering Contractor</b></p>
-                    <p>January 2018 - June 2018 • <b>Software Engineering Co-op</b></p>
-                    <h3>Quick Base</h3>
-                    <p>January 2017 - June 2017 • <b>Software Engineering Co-op</b></p>
-                    <h3>🎓 September 2015 • Started School at Northeastern University</h3>
-                </div>
             </div>
         </div>
-        <div id="footer">
-            <div id="links">
+        <div class="footer">
+            <div class="links">
                 <a href="https://www.linkedin.com/in/jonathanzybert/" target="_blank">LinkedIn</a>
                 <a href="https://github.com/jzybert" target="_blank">GitHub</a>
                 <a href="mailto:jmzybert@gmail.com" target="_blank">Email</a>

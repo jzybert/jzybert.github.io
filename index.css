@@ -1,47 +1,3 @@
-:root {
-    --color-primary: #4c662b;
-    --color-primary-text: white;
-    --color-secondary: orange;
-    --color-secondary-text: black;
-}
-
-html, body, #root, #root>div, #content {
-    background-color: white;
-    font-family: 'Roboto', Helvetica, Arial, sans-serif;
-    width: 100%;
-    height: 100%;
-    margin: 0;
-}
-
-.accent-color {
-    color: var(--color-primary)
-}
-
-.site-header {
-    height: 60px;
-    position: relative;
-    padding: 0 10vw;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    background-color: var(--color-primary);
-    color: var(--color-primary-text);
-}
-
-.home-icon {
-    cursor: pointer;
-}
-
-.contact-links > a:not(:last-child) {
-    margin-right: 16px;
-}
-
-.contact-links > a {
-    color: var(--color-primary-text);
-    text-decoration: none;
-}
-
 #my-name {
     margin-bottom: 0;
 }
@@ -127,36 +83,4 @@ html, body, #root, #root>div, #content {
     width: 70%;
     text-align: left;
     font-weight: 400;
-}
-
-#page-content {
-    padding: 60px 0;
-}
-
-#wrapper {
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 75vw;
-}
-
-#footer {
-    padding: 0 10vw;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    background-color: var(--color-primary);
-    color: var(--color-primary-text);
-}
-
-#footer > #links {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-}
-
-#footer > #links > a {
-    margin-right: 8px;
-    color: var(--color-primary-text);
-    text-decoration: none;
 }
