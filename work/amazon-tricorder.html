@@ -7,6 +7,12 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
         <link rel="stylesheet" href="../shared.css">
         <script>
+            function getYear() {
+                const d = new Date();
+                return d.getFullYear();
+            }
+        </script>
+        <script>
             function navigateTo(url) {
                 window.location.assign("https://www.jonathanzybert.com" + url);
             }
@@ -29,6 +35,15 @@
                 <h1 class="page-header-no-decor">Tricorder</h1>
                 <h2 class="page-header">Plug-in Diagnostic Hardware Integration Tool</h2>
             </div>
+        </div>
+        <div class="footer">
+            <div class="links">
+                <a href="https://www.linkedin.com/in/jonathanzybert/" target="_blank">LinkedIn</a>
+                <a href="https://github.com/jzybert" target="_blank">GitHub</a>
+                <a href="mailto:jmzybert@gmail.com" target="_blank">Email</a>
+                <a href="https://jonathanzybert.com/resume/jonathan-zybert-resume.pdf" target="_blank">Resume</a>
+            </div>
+            <p>© <script>document.write(getYear())</script> Jonathan Zybert</p>
         </div>
     </body>
 </html>
