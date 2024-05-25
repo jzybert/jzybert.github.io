@@ -13,6 +13,10 @@ html, body, #root, #root>div, #content {
     margin: 0;
 }
 
+p {
+    line-height: 1.5;
+}
+
 .accent-color {
     color: var(--color-primary)
 }
@@ -93,4 +97,14 @@ html, body, #root, #root>div, #content {
     height: 2px;
     margin-left: -25px;
     background: var(--color-secondary);
+  }
+
+  .project-overview {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .project-overview > .col {
+    width: 30%;
   }
