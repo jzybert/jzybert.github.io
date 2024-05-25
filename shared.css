@@ -73,3 +73,24 @@ html, body, #root, #root>div, #content {
     color: var(--color-primary-text);
     text-decoration: none;
 }
+
+.page-header {
+    position: relative;
+    text-align: center;
+}
+
+.page-header-no-decor {
+    position: relative;
+    text-align: center;
+}
+
+.page-header::after {
+    position: absolute;
+    content: "";
+    left: 50%;
+    bottom: -8px;
+    width: 40px;
+    height: 2px;
+    margin-left: -25px;
+    background: var(--color-secondary);
+  }
