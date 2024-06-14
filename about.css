@@ -27,3 +27,15 @@
     color: #818385;
     font-weight: 300;
 }
+
+.job-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.job-wrapper > img {
+    padding-right: 12px;
+    height: 64px;
+    width: 64px;
+}
